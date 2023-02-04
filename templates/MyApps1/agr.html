@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'MyApps1/base.html' %}
+{% block body_block %}
+    <h1>Employee Table</h1>
+    <hr/>
+    <ul>
+    <li>Average salary :{{ avg }}</li>
+    <li>Average salary :{{ avg.sal__avg }}</li>
+    <li>Max Salary :{{ max }}</li>
+    <li>Max Salary :{{ max.sal__max }}</li>
+    <li>Min Salary :{{ min }}</li>
+    <li>Min Salary :{{ min.sal__min }}</li>
+    <li>Total salary :{{ sum }}</li>
+    <li>Total salary :{{ sum.sal__sum }}</li>
+    <li>Number of Employess :{{ count }}</li>
+    <li>Number of Employess :{{ count.sal__count }}</li>
+
+    </ul>
+{% endblock %}
